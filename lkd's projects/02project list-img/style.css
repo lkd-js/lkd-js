@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .img-container {
+  height: 360px;
+  width: 640px;
+}
+
+body .img-container ul {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .img-container ul li {
+  width: 50px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+body .img-container ul li:last-child {
+  margin-right: 0;
+}
+
+body .img-container ul li:nth-child(1) {
+  background-image: url(../images/01.jpg);
+  background-size: cover;
+}
+
+body .img-container ul li:nth-child(2) {
+  background-image: url(../images/02.jpg);
+  background-size: cover;
+}
+
+body .img-container ul li:nth-child(3) {
+  background-image: url(../images/03.jpg);
+  background-size: cover;
+}
+
+body .img-container ul li:nth-child(4) {
+  background-image: url(../images/04.jpg);
+  background-size: cover;
+}
+
+body .img-container ul li:nth-child(5) {
+  background-image: url(../images/05.jpg);
+  background-size: cover;
+}
+
+body .img-container ul li:nth-child(6) {
+  background-image: url(../images/06.jpg);
+  background-size: cover;
+}
+
+body .img-container ul li.active {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .img-container ul li.active span {
+  opacity: 1;
+}
+
+body .img-container ul li svg {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+body .img-container ul li span {
+  background-color: rgba(22, 3, 3, 0.799);
+  width: 200px;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+  opacity: 0;
+  z-index: 99;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*# sourceMappingURL=style.css.map */
